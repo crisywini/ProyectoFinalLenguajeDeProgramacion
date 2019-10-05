@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="287.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.lenguaje.address.view.CreateAdminOverviewController">
+   <children>
+      <Label text="Crear Administrador" />
+      <GridPane VBox.vgrow="ALWAYS">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Nombres" />
+            <Label text="Apellidos" GridPane.rowIndex="1" />
+            <Label text="Codigo" GridPane.rowIndex="2" />
+            <Label text="Usuario" GridPane.rowIndex="3" />
+            <Label text="Contraseña" GridPane.rowIndex="4" />
+            <Label text="Repetir Contraseña" GridPane.rowIndex="5" />
+            <Label text="Telefono" GridPane.rowIndex="6" />
+            <TextField fx:id="nombreField" GridPane.columnIndex="1" />
+            <TextField fx:id="apellidoField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="codigoField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="usuarioField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <PasswordField fx:id="contraseniaField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <PasswordField fx:id="contraseniaRepeatField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="telefonoField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleAgregarButton" text="Agregar" />
+            <Button mnemonicParsing="false" onAction="#handleCancelarButton" text="Cancelar" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox minHeight="463.0" minWidth="905.0" prefHeight="463.0" prefWidth="905.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.lenguaje.address.view.DocentesOverviewController">
+   <children>
+      <SplitPane dividerPositions="0.35581787521079256" prefHeight="160.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox layoutX="53.0" layoutY="54.0" prefHeight="436.0" prefWidth="189.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <center>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                 <image>
+                                    <Image url="file:///C:/Users/Crisi/Desktop/Proyectos_lenguaje/Proyecto_final/workspace/ProyectoFinal/src/images/User_Circle.png" />
+                                 </image>
+                              </ImageView>
+                           </center>
+                           <bottom>
+                              <GridPane BorderPane.alignment="CENTER">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Nombre docente" />
+                                    <Label text="Codigo" GridPane.rowIndex="1" />
+                                    <Label fx:id="nombreDocente" text="Label" GridPane.columnIndex="1" />
+                                    <Label fx:id="codgioDocente" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="Profesion" GridPane.rowIndex="2" />
+                                    <Label fx:id="profesionDocente" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                           </bottom>
+                        </BorderPane>
+                        <TableView fx:id="misTemasTable" prefHeight="285.0" prefWidth="274.0" VBox.vgrow="ALWAYS">
+                          <columns>
+                            <TableColumn fx:id="nombreTema" prefWidth="75.0" text="Temas" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handleSalir" text="Salir" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="436.0" prefWidth="385.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" layoutX="60.0" layoutY="71.0" prefHeight="436.0" prefWidth="379.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <TableView fx:id="misExamenesTableView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                          <columns>
+                              <TableColumn fx:id="tituloColumn" prefWidth="75.0" text="Titulo" />
+                              <TableColumn fx:id="descripcionColumn" prefWidth="75.0" text="Descripcion" />
+                              <TableColumn fx:id="porcentajeExitoColumn" prefWidth="75.0" text="Porcentaje de exito" />
+                              <TableColumn fx:id="tipoExamen" prefWidth="75.0" text="Tipo examen" />
+                              <TableColumn fx:id="tiempoLimite" prefWidth="75.0" text="Tiempo limite" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                        <HBox alignment="CENTER" prefHeight="0.0" prefWidth="499.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handleCrearNuevoExamen" text="Crear nuevo examen" />
+                              <Button mnemonicParsing="false" onAction="#handleBorrarExamen" text="Borrar examen" />
+                              <Button mnemonicParsing="false" onAction="#handleMostrarEstadisticosExamen" text="Mostrar estadisticos del examen" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</HBox>

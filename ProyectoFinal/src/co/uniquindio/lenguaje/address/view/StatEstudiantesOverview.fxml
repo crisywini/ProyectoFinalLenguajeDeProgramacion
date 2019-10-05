@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="panelStatsEstudiantes" prefHeight="237.0" prefWidth="365.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.lenguaje.address.view.StatEstudiantesOverviewController">
+   <children>
+      <VBox alignment="CENTER" layoutX="133.0" layoutY="23.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BarChart fx:id="barChart" title="Examenes">
+              <xAxis>
+                <CategoryAxis fx:id="ejeX" label="Estudiantes" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="ejeY" label="PorcentajeObtenido" side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <Button mnemonicParsing="false" onAction="#handleExitButton" text="Salir" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

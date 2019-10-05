@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" prefHeight="345.0" prefWidth="362.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.lenguaje.address.view.AdminOverviewController">
+   <children>
+      <Label text="Ventana Admin" />
+      <ImageView fitHeight="195.0" fitWidth="189.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+         <image>
+            <Image url="@../../../../../images/User_Circle.png" />
+         </image>
+      </ImageView>
+      <GridPane VBox.vgrow="ALWAYS">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="User" />
+            <Label text="Password" GridPane.rowIndex="1" />
+            <TextField fx:id="userField" GridPane.columnIndex="1" />
+            <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="2.0" prefWidth="362.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleIngresarButton" text="Ingresar" />
+            <Button mnemonicParsing="false" onAction="#handleSalirButton" text="salir" />
+            <Button mnemonicParsing="false" onAction="#handleCreateAdmin" text="crear admin" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

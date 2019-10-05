@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="656.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.lenguaje.address.view.ProgramaAcademicoOverviewController">
+   <children>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" VBox.vgrow="ALWAYS">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="194.0" prefWidth="626.0">
+               <children>
+                  <VBox layoutX="146.0" layoutY="39.0" prefHeight="277.0" prefWidth="626.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <GridPane prefHeight="180.0" prefWidth="327.0" VBox.vgrow="ALWAYS">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Nombre" />
+                              <Label text="Codigo SNIES" GridPane.rowIndex="1" />
+                              <Label text="Numero de creditos" GridPane.rowIndex="2" />
+                              <Label text="Lugar de desarrollo" GridPane.rowIndex="3" />
+                              <Label text="Metdologia" GridPane.rowIndex="4" />
+                              <Label text="Jornada" GridPane.rowIndex="5" />
+                              <TextField fx:id="nombreField" GridPane.columnIndex="1" />
+                              <TextField fx:id="codigoSNIESField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="numeroCreditosField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="lugarDeDesarrollo" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <ComboBox fx:id="metodologiaBox" prefHeight="25.0" prefWidth="195.0" promptText="Elije una metodologia" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <ComboBox fx:id="jornadaBox" prefWidth="150.0" promptText="Elije una jornada" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                           </children>
+                        </GridPane>
+                        <HBox alignment="TOP_CENTER" prefHeight="31.0" prefWidth="626.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handleAgregarProgramaButton" text="Agregar programa" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <VBox layoutX="116.0" prefHeight="277.0" prefWidth="626.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <GridPane VBox.vgrow="ALWAYS">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Codigo Docente" />
+                              <TextField fx:id="codigoDocenteField" GridPane.columnIndex="1" />
+                              <Button mnemonicParsing="false" onAction="#handleAgregarDocenteAlProgramaButton" text="Agregar al programa" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <TableView fx:id="docentesTableView" prefHeight="111.0" prefWidth="626.0" VBox.vgrow="ALWAYS">
+                          <columns>
+                            <TableColumn fx:id="codigoColumn" prefWidth="75.0" text="Codigo" />
+                            <TableColumn fx:id="nombreColumn" prefWidth="75.0" text="Nombre" />
+                              <TableColumn fx:id="apellidoColumn" prefWidth="75.0" text="Apellido" />
+                              <TableColumn fx:id="usuarioColumn" prefWidth="75.0" text="Usuario" />
+                              <TableColumn fx:id="profesionColumn" prefWidth="75.0" text="Profesion" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                        <GridPane VBox.vgrow="ALWAYS">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Codigo Estudiante" />
+                              <TextField fx:id="codigoEstudianteField" GridPane.columnIndex="1" />
+                              <Button mnemonicParsing="false" onAction="#handleAgregarEstudianteAlProgramaButton" text="Agregar al programa" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <TableView fx:id="estudiantesTableView" prefHeight="68.0" prefWidth="626.0" VBox.vgrow="ALWAYS">
+                          <columns>
+                            <TableColumn fx:id="codigoEstudianteColumn" prefWidth="75.0" text="Codigo" />
+                            <TableColumn fx:id="nombreEstudianteColumn" prefWidth="75.0" text="Nombre" />
+                              <TableColumn fx:id="apellidoEstudianteColumn" prefWidth="75.0" text="Apellido" />
+                              <TableColumn fx:id="usuarioEstudianteColumn" prefWidth="75.0" text="Usuario" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="626.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handleExitButton" text="Salir" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</VBox>

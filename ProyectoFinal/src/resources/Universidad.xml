@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_211" class="java.beans.XMLDecoder">
+ <object class="co.uniquindio.lenguaje.address.model.Universidad" id="Universidad0">
+  <void property="misAdministradores">
+   <void method="add">
+    <object class="co.uniquindio.lenguaje.address.model.Administrador">
+     <void property="apellido">
+      <string>Sanchez</string>
+     </void>
+     <void property="codigo">
+      <string>1006116733</string>
+     </void>
+     <void property="contrasenia">
+      <string>crisi</string>
+     </void>
+     <void property="miUniversidad">
+      <object idref="Universidad0"/>
+     </void>
+     <void property="nombre">
+      <string>Crisi</string>
+     </void>
+     <void property="telefono">
+      <string>3147</string>
+     </void>
+     <void property="usuario">
+      <string>Crisi</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="misDocentes">
+   <void method="add">
+    <object class="co.uniquindio.lenguaje.address.model.Docente" id="Docente0">
+     <void property="apellido">
+      <string>Jaramillo Valbuena</string>
+     </void>
+     <void property="codigo">
+      <string>123456</string>
+     </void>
+     <void property="contrasenia">
+      <string>123456</string>
+     </void>
+     <void property="miUniversidad">
+      <object idref="Universidad0"/>
+     </void>
+     <void property="misExamenes">
+      <void method="add">
+       <object class="co.uniquindio.lenguaje.address.model.Examen" id="Examen0">
+        <void property="descripcion">
+         <string>parical de fundamentos 1</string>
+        </void>
+        <void property="miTipoExamen">
+         <object class="java.lang.Enum" id="TipoExamen0" method="valueOf">
+          <class>co.uniquindio.lenguaje.address.model.TipoExamen</class>
+          <string>PRIVADO</string>
+         </object>
+        </void>
+        <void property="misEstudiantes">
+         <object class="java.util.ArrayList">
+          <void method="add">
+           <object class="co.uniquindio.lenguaje.address.model.Estudiante" id="Estudiante0">
+            <void property="apellido">
+             <string>Quebrada</string>
+            </void>
+            <void property="codigo">
+             <string>123</string>
+            </void>
+            <void property="contrasenia">
+             <string>123</string>
+            </void>
+            <void property="miProgramaAcademico">
+             <object class="co.uniquindio.lenguaje.address.model.ProgramaAcademico" id="ProgramaAcademico0">
+              <void property="codigoSNIES">
+               <string>4241</string>
+              </void>
+              <void property="lugarDeDesarrollo">
+               <string>Armenia-Quindio</string>
+              </void>
+              <void property="miJordana">
+               <object class="java.lang.Enum" method="valueOf">
+                <class>co.uniquindio.lenguaje.address.model.Jornada</class>
+                <string>DIURNA</string>
+               </object>
+              </void>
+              <void property="miMetodologia">
+               <object class="java.lang.Enum" method="valueOf">
+                <class>co.uniquindio.lenguaje.address.model.Metodologia</class>
+                <string>PRESENCIAL</string>
+               </object>
+              </void>
+              <void property="nombre">
+               <string>Ingenieria de Sistemas y Computacion</string>
+              </void>
+              <void property="numeroCreditos">
+               <int>163</int>
+              </void>
+             </object>
+            </void>
+            <void property="miUniversidad">
+             <object idref="Universidad0"/>
+            </void>
+            <void property="misExamenesAsociados">
+             <object class="java.util.ArrayList">
+              <void method="add">
+               <object class="co.uniquindio.lenguaje.address.model.Examen">
+                <void property="descripcion">
+                 <string>Parcial numero 1</string>
+                </void>
+                <void property="miTipoExamen">
+                 <object idref="TipoExamen0"/>
+                </void>
+                <void property="misEstudiantes">
+                 <object class="java.util.ArrayList">
+                  <void method="add">
+                   <object idref="Estudiante0"/>
+                  </void>
+                 </object>
+                </void>
+                <void property="misTemas">
+                 <object class="java.util.ArrayList">
+                  <void method="add">
+                   <object class="co.uniquindio.lenguaje.address.model.Tema" id="Tema0">
+                    <void property="misPreguntas">
+                     <void method="add">
+                      <object class="co.uniquindio.lenguaje.address.model.Pregunta" id="Pregunta0">
+                       <void property="miTemaAsociado">
+                        <object idref="Tema0"/>
+                       </void>
+                       <void property="miTipo">
+                        <object class="java.lang.Enum" method="valueOf">
+                         <class>co.uniquindio.lenguaje.address.model.TipoPregunta</class>
+                         <string>SIMPLE</string>
+                        </object>
+                       </void>
+                       <void property="nombre">
+                        <string>Que es una matriz</string>
+                       </void>
+                       <void property="opciones">
+                        <object class="java.util.ArrayList" id="ArrayList0">
+                         <void method="add">
+                          <string>un conjunto de caracteres</string>
+                         </void>
+                         <void method="add">
+                          <string>un arreglo en dos dimensiones</string>
+                         </void>
+                         <void method="add">
+                          <string>un cuadrado</string>
+                         </void>
+                         <void method="add">
+                          <string>algo que no me acuerdo</string>
+                         </void>
+                         <void method="add">
+                          <string>un conjunto de caracteres</string>
+                         </void>
+                         <void method="add">
+                          <string>un arreglo en dos dimensiones</string>
+                         </void>
+                         <void method="add">
+                          <string>un cuadrado</string>
+                         </void>
+                         <void method="add">
+                          <string>algo que no me acuerdo</string>
+                         </void>
+                        </object>
+                       </void>
+                       <void id="ArrayList1" property="respuestas">
+                        <void method="add">
+                         <string>un arreglo en dos dimensiones</string>
+                        </void>
+                        <void method="add">
+                         <string>un arreglo en dos dimensiones</string>
+                        </void>
+                       </void>
+                      </object>
+                     </void>
+                     <void method="add">
+                      <object class="co.uniquindio.lenguaje.address.model.Pregunta">
+                       <void property="miTemaAsociado">
+                        <object idref="Tema0"/>
+                       </void>
+                       <void property="miTipo">
+                        <object class="java.lang.Enum" method="valueOf">
+                         <class>co.uniquindio.lenguaje.address.model.TipoPregunta</class>
+                         <string>MULTIPLE</string>
+                        </object>
+                       </void>
+                       <void property="nombre">
+                        <string>Que es una matriz cuadrada</string>
+                       </void>
+                       <void property="opciones">
+                        <object idref="ArrayList0"/>
+                       </void>
+                       <void property="respuestas">
+                        <object idref="ArrayList1"/>
+                       </void>
+                      </object>
+                     </void>
+                    </void>
+                    <void property="misSubTemas">
+                     <void method="add">
+                      <object class="co.uniquindio.lenguaje.address.model.Tema">
+                       <void property="nombre">
+                        <string>Matricess</string>
+                       </void>
+                      </object>
+                     </void>
+                     <void method="add">
+                      <object class="co.uniquindio.lenguaje.address.model.Tema">
+                       <void property="nombre">
+                        <string>Matricess</string>
+                       </void>
+                      </object>
+                     </void>
+                    </void>
+                    <void property="nombre">
+                     <string>Matrices en java</string>
+                    </void>
+                   </object>
+                  </void>
+                 </object>
+                </void>
+                <void property="porcentajeExito">
+                 <double>3.0</double>
+                </void>
+                <void property="tiempoLimite">
+                 <double>2.0</double>
+                </void>
+                <void property="titulo">
+                 <string>Parcial 1</string>
+                </void>
+               </object>
+              </void>
+              <void method="add">
+               <object idref="Examen0"/>
+              </void>
+              <void method="add">
+               <object class="co.uniquindio.lenguaje.address.model.Examen" id="Examen1">
+                <void property="descripcion">
+                 <string>parcial funadmentos</string>
+                </void>
+                <void property="miTipoExamen">
+                 <object idref="TipoExamen0"/>
+                </void>
+                <void property="misEstudiantes">
+                 <object class="java.util.ArrayList">
+                  <void method="add">
+                   <object idref="Estudiante0"/>
+                  </void>
+                 </object>
+                </void>
+                <void property="misTemas">
+                 <object class="java.util.ArrayList">
+                  <void method="add">
+                   <object idref="Tema0"/>
+                  </void>
+                 </object>
+                </void>
+                <void property="opcionesElejidas">
+                 <void method="add">
+                  <string>algo que no me acuerdo</string>
+                 </void>
+                 <void method="add">
+                  <string>un cuadrado </string>
+                 </void>
+                 <void method="add">
+                  <string>un arreglo en dos dimensiones</string>
+                 </void>
+                 <void method="add">
+                  <string>un arreglo en dos dimensiones</string>
+                 </void>
+                </void>
+                <void property="porcentajeExito">
+                 <double>3.0</double>
+                </void>
+                <void property="tiempoLimite">
+                 <double>2.0</double>
+                </void>
+                <void property="titulo">
+                 <string>Parcial prueba3</string>
+                </void>
+               </object>
+              </void>
+              <void method="add">
+               <object class="co.uniquindio.lenguaje.address.model.Examen" id="Examen2">
+                <void property="descripcion">
+                 <string>3</string>
+                </void>
+                <void property="miTipoExamen">
+                 <object idref="TipoExamen0"/>
+                </void>
+                <void property="misEstudiantes">
+                 <object class="java.util.ArrayList">
+                  <void method="add">
+                   <object idref="Estudiante0"/>
+                  </void>
+                  <void method="add">
+                   <object class="co.uniquindio.lenguaje.address.model.Estudiante" id="Estudiante1">
+                    <void property="apellido">
+                     <string>carnde de res</string>
+                    </void>
+                    <void property="codigo">
+                     <string>456</string>
+                    </void>
+                    <void property="contrasenia">
+                     <string>456</string>
+                    </void>
+                    <void property="miProgramaAcademico">
+                     <object idref="ProgramaAcademico0"/>
+                    </void>
+                    <void property="miUniversidad">
+                     <object idref="Universidad0"/>
+                    </void>
+                    <void property="misExamenesAsociados">
+                     <object class="java.util.ArrayList">
+                      <void method="add">
+                       <object idref="Examen2"/>
+                      </void>
+                      <void method="add">
+                       <object class="co.uniquindio.lenguaje.address.model.Examen" id="Examen3">
+                        <void property="descripcion">
+                         <string>5</string>
+                        </void>
+                        <void property="miTipoExamen">
+                         <object idref="TipoExamen0"/>
+                        </void>
+                        <void property="misEstudiantes">
+                         <object class="java.util.ArrayList">
+                          <void method="add">
+                           <object idref="Estudiante0"/>
+                          </void>
+                          <void method="add">
+                           <object idref="Estudiante1"/>
+                          </void>
+                         </object>
+                        </void>
+                        <void property="misTemas">
+                         <object class="java.util.ArrayList">
+                          <void method="add">
+                           <object idref="Tema0"/>
+                          </void>
+                         </object>
+                        </void>
+                        <void property="porcentajeExito">
+                         <double>5.0</double>
+                        </void>
+                        <void property="tiempoLimite">
+                         <double>5.0</double>
+                        </void>
+                        <void property="titulo">
+                         <string>prueba 5</string>
+                        </void>
+                       </object>
+                      </void>
+                      <void method="add">
+                       <object class="co.uniquindio.lenguaje.address.model.Examen" id="Examen4">
+                        <void property="descripcion">
+                         <string>7</string>
+                        </void>
+                        <void property="miTipoExamen">
+                         <object idref="TipoExamen0"/>
+                        </void>
+                        <void property="misEstudiantes">
+                         <object class="java.util.ArrayList">
+                          <void method="add">
+                           <object idref="Estudiante0"/>
+                          </void>
+                          <void method="add">
+                           <object idref="Estudiante1"/>
+                          </void>
+                         </object>
+                        </void>
+                        <void property="misTemas">
+                         <object class="java.util.ArrayList">
+                          <void method="add">
+                           <object idref="Tema0"/>
+                          </void>
+                         </object>
+                        </void>
+                        <void property="notaTotal">
+                         <double>5.0</double>
+                        </void>
+                        <void property="opcionesElejidas">
+                         <void method="add">
+                          <string>un arreglo en dos dimensiones</string>
+                         </void>
+                         <void method="add">
+                          <string>un arreglo en dos dimensiones un cuadrado </string>
+                         </void>
+                        </void>
+                        <void property="porcentajeExito">
+                         <double>7.0</double>
+                        </void>
+                        <void property="tiempoLimite">
+                         <double>7.0</double>
+                        </void>
+                        <void property="titulo">
+                         <string>prueba 7</string>
+                        </void>
+                       </object>
+                      </void>
+                     </object>
+                    </void>
+                    <void property="nombre">
+                     <string>Andres</string>
+                    </void>
+                    <void property="telefono">
+                     <string>456</string>
+                    </void>
+                    <void property="usuario">
+                     <string>456</string>
+                    </void>
+                   </object>
+                  </void>
+                 </object>
+                </void>
+                <void property="misTemas">
+                 <object class="java.util.ArrayList">
+                  <void method="add">
+                   <object idref="Tema0"/>
+                  </void>
+                 </object>
+                </void>
+                <void property="porcentajeExito">
+                 <double>3.0</double>
+                </void>
+                <void property="tiempoLimite">
+                 <double>3.0</double>
+                </void>
+                <void property="titulo">
+                 <string>Parcial prueba 4</string>
+                </void>
+               </object>
+              </void>
+              <void method="add">
+               <object idref="Examen3"/>
+              </void>
+              <void method="add">
+               <object idref="Examen4"/>
+              </void>
+              <void method="add">
+               <object class="co.uniquindio.lenguaje.address.model.Examen" id="Examen5">
+                <void property="descripcion">
+                 <string>456</string>
+                </void>
+                <void property="miTipoExamen">
+                 <object idref="TipoExamen0"/>
+                </void>
+                <void property="misEstudiantes">
+                 <object class="java.util.ArrayList">
+                  <void method="add">
+                   <object idref="Estudiante0"/>
+                  </void>
+                 </object>
+                </void>
+                <void property="misTemas">
+                 <object class="java.util.ArrayList">
+                  <void method="add">
+                   <object idref="Tema0"/>
+                  </void>
+                 </object>
+                </void>
+                <void property="porcentajeExito">
+                 <double>456.0</double>
+                </void>
+                <void property="tiempoLimite">
+                 <double>456.0</double>
+                </void>
+                <void property="titulo">
+                 <string>Parcial5</string>
+                </void>
+               </object>
+              </void>
+             </object>
+            </void>
+            <void property="nombre">
+             <string>Lissttee </string>
+            </void>
+            <void property="telefono">
+             <string>123</string>
+            </void>
+            <void property="usuario">
+             <string>lquebrada</string>
+            </void>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void property="misTemas">
+         <object class="java.util.ArrayList">
+          <void method="add">
+           <object idref="Tema0"/>
+          </void>
+         </object>
+        </void>
+        <void property="porcentajeExito">
+         <double>3.0</double>
+        </void>
+        <void property="tiempoLimite">
+         <double>2.0</double>
+        </void>
+        <void property="titulo">
+         <string>Parcial 1</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object idref="Examen1"/>
+      </void>
+      <void method="add">
+       <object idref="Examen2"/>
+      </void>
+      <void method="add">
+       <object idref="Examen3"/>
+      </void>
+      <void method="add">
+       <object idref="Examen4"/>
+      </void>
+      <void method="add">
+       <object idref="Examen5"/>
+      </void>
+     </void>
+     <void property="misTemas">
+      <void method="add">
+       <object idref="Tema0"/>
+      </void>
+      <void method="add">
+       <object class="co.uniquindio.lenguaje.address.model.Tema">
+        <void property="nombre">
+         <string>Arreglo en Java</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="co.uniquindio.lenguaje.address.model.Tema">
+        <void property="nombre">
+         <string>Gestion de Cadenas en Java</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="co.uniquindio.lenguaje.address.model.Tema">
+        <void property="nombre">
+         <string>Introduccion a POO</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="co.uniquindio.lenguaje.address.model.Tema">
+        <void property="nombre">
+         <string>Interfaz de Usuario</string>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="co.uniquindio.lenguaje.address.model.Tema">
+        <void property="nombre">
+         <string>ManejoDeExcepciones</string>
+        </void>
+       </object>
+      </void>
+     </void>
+     <void property="nombre">
+      <string>Sonia </string>
+     </void>
+     <void property="profesion">
+      <string>Doctora en muchas cosas</string>
+     </void>
+     <void property="telefono">
+      <string>123456</string>
+     </void>
+     <void property="usuario">
+      <string>sjaramillo</string>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="misEstudiantes">
+   <void method="add">
+    <object idref="Estudiante0"/>
+   </void>
+   <void method="add">
+    <object idref="Estudiante1"/>
+   </void>
+  </void>
+  <void property="misProgramasAcademicos">
+   <void method="add">
+    <object idref="ProgramaAcademico0"/>
+   </void>
+  </void>
+ </object>
+</java>

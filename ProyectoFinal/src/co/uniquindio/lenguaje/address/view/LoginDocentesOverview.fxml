@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="361.0" prefWidth="275.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.lenguaje.address.view.LoginDocentesOverviewController">
+   <center>
+      <ImageView fitHeight="161.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="file:///C:/Users/Crisi/Desktop/Proyectos_lenguaje/Proyecto_final/workspace/ProyectoFinal/src/images/User_Circle.png" />
+         </image>
+      </ImageView>
+   </center>
+   <bottom>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane prefHeight="145.0" prefWidth="410.0" VBox.vgrow="ALWAYS">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="usuarioField" GridPane.columnIndex="1" />
+                  <PasswordField fx:id="contraseniaField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Codigo" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label text="Contraseña" />
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="311.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleIngresarButton" text="Ingresar" />
+                  <Button mnemonicParsing="false" onAction="#handleSalirButton" text="Salir" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

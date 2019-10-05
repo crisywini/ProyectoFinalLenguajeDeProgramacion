@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="415.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.lenguaje.address.view.PrincipalOverviewController">
+   <center>
+      <ImageView fitHeight="273.0" fitWidth="279.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../../../images/uq.png" />
+         </image>
+      </ImageView>
+   </center>
+   <top>
+      <HBox alignment="TOP_CENTER" prefHeight="13.0" prefWidth="630.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleDocenteButton" text="Ingresar como docente" />
+            <Button mnemonicParsing="false" onAction="#handleEstudianteButton" text="Ingresar como estudiante" />
+            <Button mnemonicParsing="false" onAction="#handleAdminButton" text="Ingresar como administrador" />
+            <Button mnemonicParsing="false" onAction="#handleGurdarInformacion" text="Guardar Informacion" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
